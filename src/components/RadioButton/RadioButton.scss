@@ -1,0 +1,39 @@
+.custom-radio-button {
+  display: flex;
+  flex-direction: column;
+
+  span.ant-radio + * {
+    color: #69737f;
+    font-size: 14px;
+    font-weight: 500;
+
+    @media screen and (max-width: 991px) {
+      font-size: 12px !important;
+    }
+  }
+
+  .ant-radio-inner {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid black;
+    background-color: transparent !important;
+
+    &::after {
+      height: 14px;
+      width: 14px;
+      border-color: #217fe7;
+      background-color: #217fe7;
+      transform: scale(1) !important;
+      margin-block-start: -7px;
+      margin-inline-start: -7px;
+    }
+  }
+
+  .ant-radio-checked {
+    &::after {
+      border-color: transparent !important;
+      background-color: transparent;
+      display: none;
+    }
+  }
+}

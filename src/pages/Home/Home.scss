@@ -1,0 +1,116 @@
+.home-page {
+  .date-select {
+    .ant-col:nth-child(2) {
+      .ant-form-item-label {
+        visibility: hidden;
+      }
+    }
+    .ant-col:last-child {
+      .ant-form-item-label {
+        visibility: hidden;
+      }
+    }
+  }
+  .form-label {
+    margin-bottom: 0;
+  }
+
+  .input-custom {
+    width: 100%;
+    padding: 0px 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #0a58ca;
+    border: 1px solid rgb(178 182 185);
+    border-radius: 6px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 12px !important;
+    }
+
+    input::placeholder {
+      font-size: 13px;
+      color: #555;
+
+      @media screen and (max-width: 991px) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  .ant-btn-primary {
+    background: #2253af !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 1px 0px rgba(0 0 0 / 0.16);
+    border-radius: 6px;
+    color: #ffffff !important;
+    font-size: 16px;
+    padding: 0 20px;
+    line-height: 50px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+
+    i {
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      display: flex;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 11px;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-mzwlov).ant-form-item
+  .ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  left: inherit;
+  right: 0;
+  position: absolute;
+  font-size: 18px !important;
+}
+
+:where(.css-dev-only-do-not-override-mzwlov).ant-form-item .ant-form-item-label > label {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 1;
+  color: #69737f;
+
+  @media screen and (max-width: 1200px) {
+    font-weight: 300 !important;
+    font-size: 12px !important;
+    color: #63636c !important;
+    opacity: 1 !important;
+  }
+}
+
+:where(.css-dev-only-do-not-override-mzwlov).ant-form-vertical .ant-form-item-label {
+  padding-bottom: 0;
+}
+
+:where(.css-dev-only-do-not-override-mzwlov).ant-input-outlined:focus,
+:where(.css-dev-only-do-not-override-mzwlov).ant-input-outlined:focus-within {
+  border-color: #0a58ca !important;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+:where(.css-dev-only-do-not-override-mzwlov).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled) {
+  background-color: rgba(255, 0, 0, 0.08);
+  border-color: #0a58ca !important;
+}
+
+.ant-form-item-explain-error {
+  display: none;
+}
